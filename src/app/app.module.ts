@@ -13,6 +13,7 @@ import { FlashSaleComponent } from './flash-sale/flash-sale.component';
 import { BestSellingProductsComponent } from './best-selling-products/best-selling-products.component';
 import { OurProductsComponent } from './our-products/our-products.component';
 import { CategoriesTrendingComponent } from './categories-trending/categories-trending.component';
+import { OurServicesComponent } from './our-services/our-services.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { CategoriesTrendingComponent } from './categories-trending/categories-tr
     FlashSaleComponent,
     BestSellingProductsComponent,
     OurProductsComponent,
-    CategoriesTrendingComponent
+    CategoriesTrendingComponent,
+    OurServicesComponent
   ],
   imports: [
     BrowserModule,
