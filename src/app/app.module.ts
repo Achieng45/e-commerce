@@ -4,7 +4,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FooterComponent } from './footer/footer.component';
-import { ServicesComponent } from './services/services.component';
 import { TopNavbarComponent } from './top-navbar/top-navbar.component';
 import { SideNavComponent } from './side-nav/side-nav.component';
 import { CategoriesComponent } from './categories/categories.component';
@@ -19,7 +18,6 @@ import { OurServicesComponent } from './our-services/our-services.component';
   declarations: [
     AppComponent,
     FooterComponent,
-    ServicesComponent,
     TopNavbarComponent,
     SideNavComponent,
     CategoriesComponent,
