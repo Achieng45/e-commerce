@@ -1,0 +1,46 @@
+.featured-card{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0;
+    color: #fff;
+    position: relative;
+    a{
+        color: #fff;
+    }
+}
+
+.grid-col-span4{
+    grid-column: span 4;
+}
+
+.grid-row-span3{
+    grid-row: span 3;
+}
+
+.grid-row-span4{
+    grid-row: span 4;
+}
+
+.grid-col-span2{
+    grid-column: span 2;
+}
+
+.featured-grid{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(8, 4vw);
+}
+
+.featured-card:first-child{
+    grid-column: span 3;
+    grid-row-start:1 ;
+    grid-row: span 7;
+}
+
+.featured-section-content{
+    width: 80%;
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+}
