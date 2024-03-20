@@ -1,0 +1,99 @@
+.outerdiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 70px;
+    margin-left: 70px;
+    
+
+}
+.fastimage{
+   
+   display: flex;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    padding: 15px;
+   background-color: black;
+   justify-content: center;
+    
+}
+.supportimage{
+    display: flex;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    padding: 15px;
+   background-color: black;
+   justify-content: center;
+   
+}
+.guaranteeimage{
+    display: flex;
+    
+    height: 30px;
+    width: 30px;
+    padding: 15px;
+    background-color: black;
+    border-radius: 50%;
+    justify-content: center;
+}
+.imagediv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: rgb(205, 202, 202);
+    height: 80px;
+    width: 80px;
+
+}
+.truck{
+    margin: 0;
+}
+
+
+.fasttext{
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 1px;
+    margin-left: 35px;
+}
+.support2{
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 1px;
+    margin-left: 90px;
+}
+
+
+.fasttextdiv{
+    display: flex;
+    margin-bottom: 1px;
+}
+.supportdiv{
+    display: flex;
+    margin-bottom: 1px;
+
+}
+.money{
+    font-weight: 600;
+    font-size: 20px;
+
+}
+
+.centerit{
+    display: flex;
+    justify-content: center;
+}
+.lorem{
+    display: flex;
+    margin-left: 1px;
+   
+}
+.lorem p{
+    font-size: 20px;
+    font-weight: 200;
+  
+}
