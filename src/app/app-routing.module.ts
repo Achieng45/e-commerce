@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { CategoriesTrendingComponent } from './categories-trending/categories-trending.component';
 
 const routes: Routes = [
-  {path:'trending',component:CategoriesTrendingComponent}
+  
 ];
 
 @NgModule({
