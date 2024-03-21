@@ -1,1 +1,57 @@
-<p>flash-sale works!</p>
+<div class="flash-sale-container">
+  <div class="flash-sale-header">
+    <h5>Today's</h5>
+    <div class="flash-sale-section-title">
+      <h1>Flash Sale</h1>
+      <span>Expired</span>
+    </div>
+  </div>
+  <div class="cards-container">
+    <div *ngFor="let product of products" class="card">
+      <div class="image-container">
+        <img
+          src="{{ product.productImage }}"
+          alt="{{ product.name }}"
+          class="card-img-top"
+        />
+        <div class="discount-sticker">40%</div>
+        <div class="product-icons">
+          <img
+            class="icon-img"
+            src="assets/flash-sale-imgs/my-icons/eye.svg"
+            alt=""
+          />
+          <img
+            class="icon-img"
+            src="assets/flash-sale-imgs/my-icons/heart.svg"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="product-details-section">
+        <h3>{{ product.name }}</h3>
+        <p>Price: ${{ product.price }}</p>
+        <div class="star-rating">
+          <div class="stars-display">
+            <img src="assets/flash-sale-imgs/star.jpeg" alt="star" />
+            <img src="assets/flash-sale-imgs/star.jpeg" alt="star" />
+            <img src="assets/flash-sale-imgs/star.jpeg" alt="star" />
+            <img src="assets/flash-sale-imgs/star.jpeg" alt="star" />
+            <img src="assets/flash-sale-imgs/star.jpeg" alt="star" />
+          </div>
+
+          <p class="use-rating">(88)</p>
+        </div>
+        <div>
+          <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="pagination">
+    <h5>pagination</h5>
+  </div>
+  <div class="view-all-btn">
+    <button class="flash-container-button">VIEW ALL PRODUCTS</button>
+  </div>
+</div>
