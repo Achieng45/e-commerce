@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -13,6 +14,8 @@ import { BestSellingProductsComponent } from './best-selling-products/best-selli
 import { OurProductsComponent } from './our-products/our-products.component';
 import { CategoriesTrendingComponent } from './categories-trending/categories-trending.component';
 import { OurServicesComponent } from './our-services/our-services.component';
+import { CarouselModule } from 'ngx-owl-carousel-o';
+
 
 @NgModule({
   declarations: [
@@ -30,7 +33,9 @@ import { OurServicesComponent } from './our-services/our-services.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    BrowserAnimationsModule,
+    AppRoutingModule,
+    CarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]

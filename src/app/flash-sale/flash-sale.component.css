@@ -13,20 +13,26 @@
 
 .cards-container{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(8, calc(25% - 20px));
     gap: 20px;
+    overflow: scroll;
+}
+
+.cards-container::-webkit-scrollbar{
+    display: none;
 }
 
 .image-container{
-    height: auto;
+    position: relative;
+    width: 300px;
 }
-
 
 .product-icons{
     position: absolute;
     z-index: 9;
     top: 9px;
     right: 10px;
+    display: flex;
 }
 
 .icon-img{
@@ -69,18 +75,18 @@
 }
 
 .card-img-top:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .product-details-section{
-    position: absolute;
+    padding-top: 20px;
     bottom: 0;
     text-align: center;
-    /* padding: 10px; */    display: flex;
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
     p{
-        font-size: 16px;
+    font-size: 16px;
     color: #db4444;
     }
 }
@@ -96,13 +102,8 @@
     }
 
 .card{
-    height: 70vh;
+    /* height: 70vh; */
     border: none;
-}
-
-
-.view-all-btn{
-    text-align: center;
 }
 
 .flash-container-button{
@@ -117,12 +118,18 @@
 }
 
 .pagination{
-    position: relative;
     margin-top: 8px;
     margin-bottom: 8px;
-    h5{
-        position: absolute;
-        left: 50%;
-    }
+   
 }
 
+.card-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12px;
+}
+
+.stars-display{
+    display: flex;
+}

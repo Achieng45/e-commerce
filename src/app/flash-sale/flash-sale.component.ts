@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { OwlOptions } from 'ngx-owl-carousel-o';
 
 @Component({
   selector: 'app-flash-sale',
@@ -16,4 +17,31 @@ export class FlashSaleComponent {
     { id: 7, name: 'Product 8', price: 800, productImage: 'assets/flash-sale-imgs/monitor.jpeg' },
     { id: 8, name: 'Product 9', price: 800, productImage: 'assets/flash-sale-imgs/monitor.jpeg' }
   ]
+  // stars:any[]=[]
+
+  customOptions: OwlOptions = {
+    loop: false,
+    mouseDrag: false,
+    touchDrag: false,
+    pullDrag: false,
+    dots: true,
+    navSpeed: 700,
+    navText: ['', ''],
+    // responsive: {
+    //   0: {
+    //     items: 1
+    //   },
+    //   400: {
+    //     items: 2
+    //   },
+    //   740: {
+    //     items: 3
+    //   },
+    //   940: {
+    //     items: 4
+    //   }
+    // },
+    nav: false
+  }
+
   }
